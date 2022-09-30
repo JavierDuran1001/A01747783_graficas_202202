@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Robot Arm Scene Graph</title>
+
+		<script type="module" defer src="robotArmJD.js"></script>
+
+	</head>
+	<body> 
+
+		<div id="container">
+			<canvas id="webglcanvas" width=800 height=600></canvas>
+			<div id="prompt">
+				Clic and drag to rotate scene<br>Clic and drag sliders to scale.
+			</div>
+			<div id="status">
+				<div id="rotation">Rotation: 0,0,0</div>
+				<div id="scale">Scale: 1</div>
+			</div>
+		</div>
+		<div id="sliderContainer">
+			<input type="range" min="-1" max="1" value="1" step="0.01" id="slider">
+		</div>
+
+		<div id="ForearmY">Forearm in Y axis: 0</div>
+		<input type="range" min="-1.5" max="1.5" value="0" step="0.01" id="ForearmYSlider">
+
+		<div id="WristX">Wrist in X axis: 0</div>
+		<input type="range" min="-1" max="1" value="0" step="0.01" id="WristXSlider">
+
+		<div id="HandX">Hand in X axis: 0</div>
+		<input type="range" min="-1" max="1" value="0" step="0.01" id="HandXSlider">
+
+		<div id="HandZ">Hand in Z axis: 0</div>
+		<input type="range" min="-1.0" max="0" value="-0.5" step="0.01" id="HandZSlider">
+		
+		<div id="ShoulderX">Shoulder in X axis: 0</div>
+		<input type="range" min="-1.5" max="1.5" value="0" step="0.01" id="ShoulderXSlider">
+		
+		<div id="ElbowX">Elbow in X axis: 0</div>
+		<input type="range" min="-1.5" max="1.5" value="0" step="0.01" id="ElbowXSlider">
+
+		<div id="ShoulderZ">Shoulder in Z axis: 0</div>
+		<input type="range" min="-1.5" max="1.5" value="0" step="0.01" id="ShoulderZSlider">
+
+
+	</body>
+
+</html>
